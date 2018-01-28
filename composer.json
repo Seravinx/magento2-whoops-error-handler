@@ -7,7 +7,7 @@
     "magento/framework": "^100.1.0|^101.0.0",
     "filp/whoops": "^2.1",
     "php": ">=7.0.0",
-    "symfony/var-dumper": "3.2.*",
+    "symfony/var-dumper": "3.2.*"
   },
   "autoload": {
     "psr-4": {
