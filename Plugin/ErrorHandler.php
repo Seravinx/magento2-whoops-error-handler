@@ -20,14 +20,15 @@ class ErrorHandler
         \Magento\Framework\App\RequestInterface $request,
         \Magento\Framework\App\Config\ScopeConfigInterface $scopeConfig,
         \Whoops\Run $run
-        ) {
+    ) {
         $this->appState = $appState;
         $this->request = $request;
         $this->scopeConfig = $scopeConfig;
         $this->run = $run;
     }
 
-    public function beforelaunch() {
+    public function beforelaunch()
+    {
         if ($this->appState->getMode() == \Magento\Framework\App\State::MODE_DEVELOPER) {
             if ($this->request->isXmlHttpRequest()) {
                 $handler = new \Whoops\Handler\JsonResponseHandler;
@@ -47,7 +48,7 @@ class ErrorHandler
         \Magento\Framework\App\Http $subject,
         \Magento\Framework\App\Bootstrap $bootstrap,
         \Exception $exception
-        ) {
+    ) {
         if ($this->appState->getMode() == \Magento\Framework\App\State::MODE_DEVELOPER) {
             $this->run->handleException($exception);
         }
