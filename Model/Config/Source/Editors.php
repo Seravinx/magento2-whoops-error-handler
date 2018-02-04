@@ -7,6 +7,7 @@ class Editors implements \Magento\Framework\Option\ArrayInterface
     public function toOptionArray()
     {
         return [
+            ['label' => 'Select default editor', 'value' => ''],
             ['label' => 'sublime', 'value' => 'sublime'],
             ['label' => 'textmate', 'value' => 'textmate'],
             ['label' => 'emacs', 'value' => 'emacs'],

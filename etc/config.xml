@@ -4,7 +4,7 @@ xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
     <default>
         <dev>
             <debug>
-                <default_editor>sublime</default_editor>
+                <default_editor></default_editor>
             </debug>
         </dev>
     </default>
