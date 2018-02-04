@@ -2,7 +2,7 @@
 
 This is magento 2 module that adds Whoops error handling.
 
-    composer require --dev seravinx/magento2-whoops-error-handling
+    composer require --dev seravinx/magento2-whoops-error-handler
 
     ./bin/magento module:enable Seravinx_Whoops
     ./bin/magento setup:upgrade
