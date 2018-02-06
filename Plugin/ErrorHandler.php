@@ -18,13 +18,12 @@ class ErrorHandler
     public function __construct(
         \Magento\Framework\App\State $appState,
         \Magento\Framework\App\RequestInterface $request,
-        \Magento\Framework\App\Config\ScopeConfigInterface $scopeConfig,
-        \Whoops\Run $run
+        \Magento\Framework\App\Config\ScopeConfigInterface $scopeConfig
     ) {
         $this->appState = $appState;
         $this->request = $request;
         $this->scopeConfig = $scopeConfig;
-        $this->run = $run;
+        $this->run = new \Whoops\Run;
     }
 
     public function beforelaunch()
